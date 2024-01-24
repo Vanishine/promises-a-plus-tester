@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises/A+ Compliance Test Suite</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🪙</text></svg>"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/mocha@2.5.3/mocha.css"
+      integrity="sha256-KaZIQf/BkrJQ7cZRMYEmNJRvvw6wICnqvIB/1HiDMTU="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/mocha@2.5.3/mocha.js"
+      integrity="sha256-nn4PfGP5WRuq0cBG2Sb5gb3cJbFw2iXK3bV/wKkZ5wQ="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #mocha {
+        font-family: Inter, sans-serif;
+      }
+      * {
+        font-weight: normal;
+      }
+      :root {
+        color-scheme: light dark;
+      }
+      textarea {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1200px;
+      }
+      .hidden {
+        display: none;
+      }
+      @media (prefers-color-scheme: dark) {
+        #mocha em {
+          color: #fff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form" class="hidden">
+      <select name="template">
+        <option value="standard">Standard</option>
+        <option value="rsvp">RSVP.js</option>
+        <option value="custom">Your implementation</option>
+      </select>
+      <button>Run tests</button>
+      <a href="https://github.com/Vanishine/promises-a-plus-tester">GitHub</a>
+      <br />
+      <textarea name="code" rows="20"></textarea>
+    </form>
+    <pre id="code"></pre>
+    <div id="mocha"></div>
+    <script src="main.js"></script>
+  </body>
+</html>

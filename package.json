@@ -1,0 +1,27 @@
+{
+  "name": "promises-a-plus-tester",
+  "version": "0.1.0",
+  "description": "A tester of checking correct Promises/A+ implemetation come in handy.",
+  "private": true,
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "shx mkdir -p dist && browserify -t brfs src/main.js | terser -o dist/main.js && shx cp public/* dist"
+  },
+  "keywords": [
+    "promises-aplus",
+    "browserify",
+    "mocha"
+  ],
+  "author": "Vanishine",
+  "license": "MIT",
+  "devDependencies": {
+    "brfs": "^2.0.2",
+    "browserify": "^17.0.0",
+    "shx": "^0.3.4",
+    "terser": "^5.27.0"
+  },
+  "dependencies": {
+    "promises-aplus-tests": "^2.1.2"
+  }
+}
